@@ -1,0 +1,63 @@
+# -----------------------------------------
+# Syntax colouring for ST7567_TM9624 library
+# -----------------------------------------
+
+
+##################################################
+# Datatypes (such as objects)(KEYWORD1)
+##################################################
+ST7567_TM9624				KEYWORD1
+
+
+##################################################
+# Methods / functions (KEYWORD2)
+##################################################
+st7567_tm9624_init 			KEYWORD2
+begin 						KEYWORD2
+st7567_tm9624_command 		KEYWORD2
+st7567_tm9624_data 			KEYWORD2
+set_brightness 				KEYWORD2
+clear_display 				KEYWORD2
+clear 						KEYWORD2
+display 					KEYWORD2
+setpixel 					KEYWORD2
+getpixel 					KEYWORD2
+fillcircle 					KEYWORD2
+drawcircle 					KEYWORD2
+drawrect 					KEYWORD2
+fillrect 					KEYWORD2
+drawline 					KEYWORD2
+drawchar 					KEYWORD2
+drawstring 					KEYWORD2
+drawstring_P 				KEYWORD2
+drawbitmap 					KEYWORD2
+
+
+
+##################################################
+# Constants (LITERAL1)
+##################################################
+LCDWIDTH					LITERAL1
+LCDHEIGHT					LITERAL1
+CMD_DISPLAY_OFF				LITERAL1
+CMD_DISPLAY_ON				LITERAL1
+CMD_SET_DISP_START_LINE		LITERAL1
+CMD_SET_ADC_NORMAL			LITERAL1
+CMD_SET_ADC_REVERSE			LITERAL1
+CMD_SET_DISP_NORMAL			LITERAL1
+CMD_SET_DISP_REVERSE		LITERAL1
+CMD_SET_ALLPTS_NORMAL		LITERAL1
+CMD_SET_ALLPTS_ON			LITERAL1
+CMD_SET_BIAS_9				LITERAL1
+CMD_SET_BIAS_8				LITERAL1
+CMD_SET_BIAS_7				LITERAL1
+CMD_SET_BIAS_6				LITERAL1
+CMD_INTERNAL_RESET			LITERAL1
+CMD_SET_COM_NORMAL			LITERAL1
+CMD_SET_COM_REVERSE			LITERAL1
+CMD_SET_REG_RATIO			LITERAL1
+CMD_SET_CONTRAST_LEVEL		LITERAL1
+CMD_SET_BOOSTER 			LITERAL1
+CMD_SET_BOOSTER_4X 			LITERAL1
+CMD_SET_BOOSTER_5X 			LITERAL1
+CMD_SET_BOOSTER_6X 			LITERAL1
