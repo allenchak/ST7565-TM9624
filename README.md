@@ -30,10 +30,6 @@ Remark \*1: with 300 ohm
 Remark \*2: should be work >= 1uF capacitor
 
 
-## Schematic
-![](https://github.com/allenchak/LM6023/blob/master/resources/LM6023.png?raw=true)
-
-
 ## TODO
 - More detail of this readme file
 - Test and allow to config the SPI clock speed
