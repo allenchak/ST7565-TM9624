@@ -1,7 +1,7 @@
 # TM9624ACCWGWA2
 TianMa TM9624ACCWGWA2 is 96x24 LCD display using ST7567 controller, using serial interface.
 I would like say thankyou to ladyada, because this library based on [ST7565-LCD](https://github.com/adafruit/ST7565-LCD/) version.
-![](https://github.com/allenchak/ST7565-TM9624/blob/master/resources/tm9624a_front.jpg?raw=true)
+![](https://github.com/allenchak/ST7565-TM9624/blob/master/resource/tm9624a_front.jpg?raw=true)
 
 
 ## Important Notes
@@ -40,4 +40,4 @@ Remark \*2: should be work >= 1uF capacitor
 - More detail of this readme file
 - Test and allow to config the SPI clock speed
 - Add Schematic
-- Merge to using Adafruit GFX library
+- Merge to Adafruit GFX library API
