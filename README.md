@@ -41,3 +41,4 @@ Remark \*2: should be work >= 1uF capacitor
 - Test and allow to config the SPI clock speed
 - Add Schematic
 - Merge to Adafruit GFX library API
+- Apply `F()` function for `drawstring()`

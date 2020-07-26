@@ -18,7 +18,7 @@
 #include <SPI.h>
 #include "ST7567_TM9624.h"
 
-#define ST7567_STARTBYTES    35
+#define ST7567_STARTBYTES    36
 #define CMD_DELAY_INTERVAL    5  // uS, microsecond
 #define BUFFER_SIZE         288
 
@@ -365,7 +365,13 @@ inline void ST7567_TM9624::spiwrite(uint8_t c) {
         shiftOut(sid, sclk, MSBFIRST, c);
       }
       else {
+        if(cs > 0){
+          digitalWrite(cs, LOW);
+        }
         SPI.transfer(c);
+        if(cs > 0){
+          digitalWrite(cs, HIGH);
+        }
       }
   #else
       int8_t i;
@@ -418,14 +424,15 @@ void ST7567_TM9624::display(void) {
 }
 
 
-// clear everything
+// clear memory only
 void ST7567_TM9624::clear(void) {
   memset(st7567_tm9624_buffer, 0, BUFFER_SIZE);
 }
 
 
-// this doesnt touch the buffer, just clears the display RAM - might be handy
+// clear memory and update to display
 void ST7567_TM9624::clear_display(void) {
+  clear();
   uint8_t p, c;
   
   for(p = 0; p < 3; p++) {
